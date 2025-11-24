@@ -3,23 +3,54 @@
 ## AIM:
 To write a Java program that adds elements from an array into a TreeSet and displays the elements in sorted order.
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1.Read input array
+2.Create empty TreeSet
+3.Insert all array elements into TreeSet
+4.Print TreeSet elements (in sorted order)
 
 ## Program:
 ```
 /*
 Program that adds elements from an array into a TreeSet and displays the elements in sorted order.
-Developed by: 
-RegisterNumber:  
+Developed by: sandhiya sree b
+RegisterNumber:  212223220093
+import java.util.*;
+
+public class ArrayToTreeSet {
+
+    public static TreeSet<Integer> convertArrayToTreeSet(int[] arr) {
+        // Type Your Code Here.
+        TreeSet<Integer> set = new TreeSet<>();
+        for (int a:arr)
+            set.add(a);
+        return set;
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        TreeSet<Integer> treeSet = convertArrayToTreeSet(arr);
+        System.out.println("Elements in TreeSet:");
+        for (int num : treeSet) {
+            System.out.println(num);
+        }
+
+        sc.close();
+    }
+}
+
 */
 ```
 
 ## Output:
 
+<img width="609" height="495" alt="image" src="https://github.com/user-attachments/assets/834affe6-3a46-48a7-bdb4-c9aa35ef4cb6" />
 
 
 ## Result:
